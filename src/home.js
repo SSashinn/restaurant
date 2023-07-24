@@ -1,29 +1,5 @@
-export function addHeader(container) {
-    const header = document.createElement('header');
-    header.id = 'header';
-    container.appendChild(header);
-
-    const ul = document.createElement('ul');
-    ul.id = 'ul';
-    header.appendChild(ul)
-
-    const li1 = document.createElement('li');
-    li1.classList.add('tabs');
-    li1.textContent = 'Home'; 
-    ul.appendChild(li1);
-
-    const li2 = document.createElement('li');
-    li2.classList.add('tabs');
-    li2.textContent = 'Menu'; 
-    ul.appendChild(li2);
-
-    const li3 = document.createElement('li');
-    li3.classList.add('tabs');
-    li3.textContent = 'Contact'; 
-    ul.appendChild(li3);
-}
-
-function addMain(container){
+function addMain(){
+    const container = document.querySelector('#container');
     const main = document.createElement('main');
     main.id  = 'main';
     container.appendChild(main);

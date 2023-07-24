@@ -1,5 +1,6 @@
-import {addHeader,addMain} from './home';
-const container = document.getElementById('container');
+import {addMain} from './home';
+import addHeader from './tabs';
 
-addHeader(container);
-addMain(container);
+
+addHeader();
+addMain();
